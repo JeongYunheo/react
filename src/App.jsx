@@ -14,6 +14,12 @@ function App(props) {
    </ul>
    */}
       <ul>
+        {foodList.map(function (food) {
+          return <li>{food}</li>;
+        })}
+      </ul>
+
+      <ul>
         {foodList.map((food) => (
           <li>{food}</li>
         ))}
