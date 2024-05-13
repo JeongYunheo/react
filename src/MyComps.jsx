@@ -1,19 +1,10 @@
-export const myStr = "korea";
-export const myAddress = "127.0.0.1";
-const value3 = 99;
-const value4 = {};
-const value5 = [];
-
-export function action1() {
-  return null;
+// react component
+export function MyComps() {
+  return <div>mycomp</div>;
 }
 
-export const action2 = function () {
-  return null;
+export const YourComp = function () {
+  return <div>yourcomp</div>;
 };
 
-export const action3 = () => null;
-
-export function MyComp() {
-  return <div>Lorem.</div>;
-}
+export const ArrowComp = () => <div>arrow function component</div>;
