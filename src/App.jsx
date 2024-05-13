@@ -6,7 +6,7 @@ function MyComp() {
 
   return (
     <div>
-      <button onClick={() => setVal(0)}>click {val}</button>
+      <button onClick={() => setVal(1)}>click {val}</button>
     </div>
   );
 }
