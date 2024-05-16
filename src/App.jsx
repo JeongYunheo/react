@@ -5,6 +5,9 @@ function App(props) {
   const [name, setName] = useState("");
   const [city, setCity] = useState("");
 
+  const [id, setId] = useState("");
+  const [email, setEmail] = useState("");
+
   function handleClick1() {
     const obj1 = { name: "son", age: 20 };
     // const json1 = JSON.stringify(obj1);
@@ -32,6 +35,14 @@ function App(props) {
     axios.post("/api/main41/sub3", { name, city });
   }
 
+  function handleClick4() {
+    const data = {
+      id,
+      email,
+    };
+    axios.post("/api/main41/sub4", data);
+  }
+
   return (
     <div>
       <button onClick={handleClick1}>request (json 데이터 포함)</button>
@@ -43,6 +54,13 @@ function App(props) {
         <input type="text" onChange={(e) => setCity(e.target.value)} />
         <br />
         <button onClick={handleClick3}>요청(input에 입력한 값)</button>
+      </div>
+      <div>
+        <input type="text" onChange={(e) => setId(e.target.value)} />
+        <br />
+        <input type="text" onChange={(e) => setEmail(e.target.value)} />
+        <br />
+        <button onClick={handleClick4}>요청(input에 입력한 값)</button>
       </div>
     </div>
   );
