@@ -1,38 +1,82 @@
 import React from "react";
-import { Button, ChakraProvider } from "@chakra-ui/react";
+import { Box, ChakraProvider } from "@chakra-ui/react";
 
 function App(props) {
   return (
     <ChakraProvider>
-      <div>
-        <Button colorScheme={"gray"}>Grey</Button>
-        <Button colorScheme={"red"}>Lorem.</Button>
-        <Button colorScheme={"orange"}>Atque?</Button>
-        <Button colorScheme={"yellow"}>Ipsum!</Button>
-        <Button colorScheme={"green"}>Quia?</Button>
-        <Button colorScheme={"teal"}>Nemo.</Button>
-        <Button colorScheme={"blue"}>Accusantium?</Button>
-        <Button colorScheme={"cyan"}>Saepe!</Button>
-        <Button colorScheme={"purple"}>Sapiente.</Button>
-        <Button colorScheme={"red"}>Quibusdam.</Button>
-        <hr />
-        <Button colorScheme={"blue"} isLoading={true}>
-          lorem
-        </Button>
-        <hr />
-        <Button colorScheme={"blue"} variant={"solid"}>
-          Lorem.
-        </Button>
-        <Button colorScheme={"blue"} variant={"outline"}>
-          Accusamus.
-        </Button>
-        <Button colorScheme={"blue"} variant={"ghost"}>
-          Accusamus.
-        </Button>
-        <Button colorScheme={"blue"} variant={"link"}>
-          Saepe?
-        </Button>
+      <div
+        style={{
+          padding: "10px",
+          margin: "20px",
+          border: "1px solid black",
+          backgroundColor: "tomato",
+        }}
+      >
+        abd
       </div>
+      <Box p={"10x"} m={"20px"} border={"1px solid black"} bgColor={"tomato"}>
+        Lorem ipsum dolor.
+      </Box>
+      <Box bgColor={"orange.50"}>Lorem ipsum dolor.</Box>
+      <Box bgColor={"orange.100"}>Lorem ipsum dolor.</Box>
+      <Box bgColor={"orange.200"}>Lorem ipsum dolor.</Box>
+      <Box bgColor={"orange.300"}>Lorem ipsum dolor.</Box>
+      <Box bgColor={"orange.400"}>Lorem ipsum dolor.</Box>
+      <Box bgColor={"orange.500"}>Lorem ipsum dolor.</Box>
+      <Box bgColor={"orange.600"}>Lorem ipsum dolor.</Box>
+      <Box bgColor={"orange.700"}>Lorem ipsum dolor.</Box>
+      <Box bgColor={"orange.800"}>Lorem ipsum dolor.</Box>
+      <hr />
+      <Box m={"10px"} bgColor={"green"}>
+        Lorem ipsum dolor.
+      </Box>
+      <Box mt={"10px"} bgColor={"green"}>
+        Ea hic, ipsum?
+      </Box>
+      <Box mb={"10px"} bgColor={"green"}>
+        Cumque, dolor, facere.
+      </Box>
+      <Box ml={"10px"} bgColor={"green"}>
+        Architecto, autem, dolore.
+      </Box>
+      <Box mr={"10px"} bgColor={"green"}>
+        Nihil, nostrum odio!
+      </Box>
+      <Box mx={"10px"} bgColor={"green"}>
+        Natus, quibusdam reprehenderit.
+      </Box>
+      <Box my={"10px"} bgColor={"green"}>
+        Autem, laudantium, quia.
+      </Box>
+      <hr />
+      <Box bgColor={"teal"} p={"10px"}>
+        Lorem ipsum dolor.
+      </Box>
+      <Box bgColor={"teal"} pt={"10px"}>
+        Commodi delectus, quia!
+      </Box>
+      <Box bgColor={"teal"} pb={"10px"}>
+        Magnam saepe, voluptatibus.
+      </Box>
+      <Box bgColor={"teal"} pl={"10px"}>
+        Excepturi quidem, sequi!
+      </Box>
+      <Box bgColor={"teal"} pr={"10px"}>
+        Iusto laborum, nobis?
+      </Box>
+      <Box bgColor={"teal"} px={"10px"}>
+        Dolorem, nesciunt, quos?
+      </Box>
+      <Box bgColor={"teal"} py={"10px"}>
+        Blanditiis, error, similique?
+      </Box>
+      <hr />
+      <Box w={"500px"} bgColor={"pink"}>
+        Lorem.
+      </Box>
+      <Box h={"500px"} bgColor={"pink"}>
+        Deleniti.
+      </Box>
     </ChakraProvider>
   );
 }
