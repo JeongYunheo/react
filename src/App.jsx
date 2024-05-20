@@ -27,6 +27,7 @@ function App(props) {
       </div>
       <div>
         <input type="text" value={text5} />
+        {/* 오류에 해당함 onChange나 readOnly 도 작성해야함 */}
       </div>
     </div>
   );
