@@ -11,8 +11,8 @@ function App(props) {
   // key prop 의 값은 주로 primary key
   return (
     <div>
-      {names.map((name, index) => (
-        <li key={index}>{name}</li>
+      {names.map((name, index1) => (
+        <li key={index1}>{name}</li>
       ))}
     </div>
   );
